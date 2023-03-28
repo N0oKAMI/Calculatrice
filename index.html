@@ -1,0 +1,41 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+
+        <div class="screen">
+        <div class="affichage"><input type="text" id="resultat" disabled=""></div> <!-- écran d'affichage -->
+        <div class="affichage"><input type="text" id="zone-saisie" placeholder="0"></div> <!-- zone d'affichage du résultat -->   
+        </div>
+
+        <input type="button" value="7" class="number" onclick="baseCalculator.display(7)">
+        <input type="button" value="8" class="number" onclick="baseCalculator.display(8)">
+        <input type="button" value="9" class="number" onclick="baseCalculator.display(9)">
+        <input type="button" value="/" class="operator" onclick="baseCalculator.AddOperator('/')">
+        <input type="button" value="AC" class="allclear" onclick="baseCalculator.allErase()">
+        <input type="button" value="C" class="clear" onclick="baseCalculator.erase()">
+        <input type="button" value="4" class="number" onclick="baseCalculator.display(4)">
+        <input type="button" value="5" class="number" onclick="baseCalculator.display(5)">
+        <input type="button" value="6" class="number" onclick="baseCalculator.display(6)">
+        <input type="button" value="*" class="operator" onclick="baseCalculator.AddOperator('*')">
+        <input type="button" value="(" class="parentheses" onclick="baseCalculator.AddParenthesis('(')">
+        <input type="button" value=")" class="parentheses" onclick="baseCalculator.AddParenthesis(')')">
+        <input type="button" value="1" class="number" onclick="baseCalculator.display(1)">
+        <input type="button" value="2" class="number" onclick="baseCalculator.display(2)">
+        <input type="button" value="3" class="number" onclick="baseCalculator.display(3)">
+        <input type="button" value="-" class="operator" onclick="baseCalculator.AddOperator('-')">
+        <input type="button" value="0" id="number0" class="number" onclick="baseCalculator.display(0)">
+        <input type="button" value="." class="decimal" onclick="baseCalculator.AddComma()">
+        <input type="button" value="<<" class="history" onclick="baseCalculator.displayHistory()">
+        <input type="button" value="+" id="operatorplus" class="operator" onclick="baseCalculator.AddOperator('+')">
+        <input type="button" value="=" class="equals" onclick="baseCalculator.calculate()">
+
+      </div>   
+      <script src="script.js"></script>   
+
+</body></html>
