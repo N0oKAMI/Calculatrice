@@ -1,0 +1,80 @@
+.calculator {
+    display: grid;
+    padding: 10px;
+    border-radius: 1em;
+    grid-template-columns: repeat(6);
+    grid-gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: grey;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  
+  .screen {
+    grid-column: span 6;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #eee;
+    padding: 10px;
+  }
+  body{
+    background-color: #000;
+  }
+
+  #zone-saisie,
+  #resultat{
+    display: block;
+    width: 100%;
+    
+  }
+  
+  .affichage {
+    font-size: 2rem;
+  }
+  
+  .clear,
+  .allclear,
+  .history,
+  .parentheses,
+  .operator,
+  .number,
+  .decimal,
+  .equals {
+    grid-column: span 1;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    background-color: #2f6219;
+    cursor: pointer;
+  }
+  
+  .history{
+    background-color: #60ec24;
+  }
+  .clear,
+  .allclear {
+    background-color: #d6ce35;
+  }
+
+  .equals{
+    grid-column: 5 / span 2;
+  }
+
+  #number0{
+    grid-column: 1/ span 1;
+  }
+
+  #operatorplus{
+    grid-column: 4/ span 1;
+  }
+  
+  
+  .active {
+    background-color: #ccc;
+  }
+  
+  .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  
